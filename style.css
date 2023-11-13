@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.html {
+  font-size: 62%;
+}
+
+body {
+  background: #fffbee;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 15px;
+  text-decoration: none;
+  border-radius: 15px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: small;
+}
+
+.btn-primary {
+  cursor: pointer;
+  padding: 3px 5px 3px 5px;
+  color: #fff;
+  background: #16a083;
+}
+
+.btn-primary:hover {
+  background: #117964;
+  transition: background 0.3s ease-in-out;
+}
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  opacity: 0.85;
+  height: 50px;
+  z-index: 12;
+}
+
+.selected {
+  background: #1179643a;
+  padding: 15px 9px 8px 9px;
+  border-bottom: #16a083 3px solid;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 24px;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+  color: #117964;
+  transition: color 0.3s ease-in-out;
+}
+
+.logo {
+  order: 1;
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.showcase-area {
+  height: 1000px;
+  background: linear-gradient(rgba(240, 240, 240, 0.144),
+      rgba(255, 255, 255, 0.336)),
+    url("./Pictures/inrs.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 26px;
+}
+
+.main-title {
+  text-transform: uppercase;
+  margin-top: 24px;
+}
+
+.food-menu-heading {
+  padding-top: 60px;
+  text-align: center;
+  font-size: 54px;
+  font-weight: 400;
+  color: #0a3d1c;
+}
+
+.food-menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0px 30px 0px;
+}
+
+.food-menu-container img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 0.15rem #0b4337 solid;
+  object-fit: cover;
+  object-position: center;
+}
+
+.food-menu-item {
+  display: flex;
+  flex: 1 1 600px;
+  justify-content: space-evenly;
+  margin-bottom: 48px;
+}
+
+.food-description {
+  margin: auto 24px;
+}
+
+.font-title {
+  font-size: 28px;
+  font-weight: 400;
+  color: #444;
+}
+
+.food-description p {
+  font-size: 22px;
+  color: #555;
+  font-weight: 500;
+}
+
+.food-description .food-price {
+  color: #117964;
+  font-weight: 700;
+}
+
+.navform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.height {}
+
+.container-form {
+  /* background-color: #fff9e4; */
+  display: flex;
+  align-items: center;
+  max-height: 720px;
+  height: 100%;
+  border-bottom: #117964 2px solid;
+}
+
+#hidden {
+  display: none;
+}
+
+.btn-primary-hidden {
+  margin-top: -20px;
+  margin-bottom: 40px;
+  font-size: 24px;
+  position: relative;
+  left: 42%;
+  /* display: flex; */
+  align-items: center;
+  cursor: pointer;
+  padding: 3px 5px 3px 5px;
+  color: #fff;
+  background: #16a083;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-primary-hidden:hover {
+  background: #117964;
+  transition: background 0.3s ease-in-out;
+}
+
+.showcase-area-drink {
+  height: 480px;
+  background: linear-gradient(rgba(240, 240, 240, 0.144),
+      rgba(255, 255, 255, 0.336)),
+    url("./Pictures/Drink/vine1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.showcase-area-food {
+  height: 480px;
+  background: linear-gradient(rgba(240, 240, 240, 0.144),
+      rgba(255, 255, 255, 0.336)),
+    url("./Pictures/Drink/Bg-work-kitchen.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer-section {
+  background: #151414;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+}
+
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
+}
+
+.footer-logo img {
+  max-width: 200px;
+}
+
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 28px;
+}
+
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+
+.facebook-bg {
+  background: #3B5998;
+}
+
+.twitter-bg {
+  background: #55ACEE;
+}
+
+.google-bg {
+  background: #DD4B39;
+}
+
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+
+.footer-widget ul li a:hover {
+  color: #ff5e14;
+}
+
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #ff5e14;
+  padding: 13px 20px;
+  border: 1px solid #ff5e14;
+  top: 0;
+}
+
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+
+.copyright-area {
+  background: #202020;
+  padding: 25px 0;
+}
+
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+
+.copyright-text p a {
+  color: #ff5e14;
+}
+
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.footer-menu li:hover a {
+  color: #ff5e14;
+}
+
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+.main-map {
+  border: 2px #0b4337 solid;
+}
+
+.bron_items {
+  display: flex;
+}
+
+.bron_form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.bron__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  border: 3px solid #16a083;
+  background-color: rgb(255, 209, 149);
+  border-radius: 24px;
+}
+
+.bron_input {
+  font-size: 18px;
+  width: 275px;
+  height: 45px;
+  border-radius: 24px;
+  padding: 15px;
+  outline: 0;
+  border: 1px solid #16a083;
+  margin: 10px 0;
+}
+
+.bron_select {
+  border-radius: 24px;
+  margin: 0 auto;
+  width: 125px;
+  height: 45px;
+}
+
+.bron_form .btn-primary {
+  margin: 20px auto;
+  width: 175px;
+  height: 50px;
+  border-radius: 24px;
+  outline: 0;
+  border: 0;
+  font-size: 16px;
+}
